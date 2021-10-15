@@ -629,7 +629,7 @@ app.get('/delete/:title', (req, res) => {
 //********** [Expressjs App] **********\\
 
 // Setting up the port 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Setting up the server at the port
 app.listen(port, () => {
