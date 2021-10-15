@@ -42,7 +42,7 @@ for (i=0; i<listItems.length; i++) {
                 ${data[0].Text}
                 </div>
             </div>
-            <div class="resources">
+            <div class="resources mt-6">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Dictionary</a>
