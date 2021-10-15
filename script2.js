@@ -26,7 +26,7 @@ for (i=0; i<listItems.length; i++) {
             
             // 3a) Changing the HTML and adding the main text
             body[0].innerHTML = `
-            <nav class="navbar navbar-expand navbar-light bg-light">
+            <nav class="navbar sticky-top navbar-expand navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">theEditor</a>
                     <div class="navbar-nav navbar-collapse">
