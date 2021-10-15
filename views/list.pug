@@ -1,0 +1,30 @@
+html
+    head
+        meta(charset="utf-8")
+        meta(
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        )
+        //- link
+        link(
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        )
+        script(
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        )
+        link(href='../style.css' rel='stylesheet')
+    body
+        //- h1= message
+        nav.navbar.navbar-expand.navbar-light.bg-light.container-fluid
+            a.navbar-brand(href='/') theEditor
+        ul.list-group
+            each title in titles
+                li.list-group-item
+                    a(href=`#`)= title
+                    button.btn-close.ms-2(type='button', aria-label='Close')
+        script(src='script2.js')

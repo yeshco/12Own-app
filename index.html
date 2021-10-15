@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+
+        <!-- Bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Stylesheet link -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">theEditor</a>
+                <div class="navbar-nav navbar-collapse">
+                    <a class="nav-link d-flex" href="/list">Saved List</a>
+                </div>
+                <div class="navbar-nav">
+                    <button href="#myModal" type="button" class="btn btn-outline-dark save" data-bs-toggle="modal">Save</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Editor -->
+        <div>
+            <div id="editor">
+            </div>
+        </div>
+
+        <!-- Tabs for the results -->
+        <div class="resources">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Dictionary</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Wikipedia</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active cardsContainer mt-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="card-body">
+                        <h5 class="card-title">Dictionary</h5>
+                        <p class="card-text">Click the button below to get the definition of complicated words</p>
+                        <a href="#" class="btn btn-primary submitButton">Get Definitions</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade cardsContainer mt-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="card-body">
+                        <h5 class="card-title">Wikipedia</h5>
+                        <p class="card-text">Click the button below to get the Wikipedia entry of interesting words</p>
+                        <a href="#" class="btn btn-primary submitButton">Get Definitions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="m-4">
+        
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form>
+                        <div class="modal-header">
+                            <h5 class="modal-title">Save</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                You haven't looked up anything!
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SCRIPTS -->
+
+        <!-- Editor.js Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script><!-- Header -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script><!-- Image -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest"></script><!-- Delimiter -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script><!-- List -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script><!-- Checklist -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script><!-- Quote -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/code@latest"></script><!-- Code -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/embed@latest"></script><!-- Embed -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script><!-- Table -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/link@latest"></script><!-- Link -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/warning@latest"></script><!-- Warning -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/marker@latest"></script><!-- Marker -->
+        <script src="https://cdn.jsdelivr.net/npm/@editorjs/inline-code@latest"></script><!-- Inline Code -->
+
+
+        <!-- My Scripts -->
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+
